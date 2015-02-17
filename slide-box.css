@@ -1,0 +1,128 @@
+/*****************************************************
+    SLIDEBOX
+*****************************************************/
+
+.slideBoxWrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slideBoxContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+}
+.slideBox{
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slideBox.right{
+    right: -100%;
+    top: 0%;
+}
+.slideBoxStage{
+    overflow-x: hidden;
+    position: relative;
+}
+
+.slideBoxLoad{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #deff00;
+}
+
+.slideBoxLoader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #FFFFFF;
+}
+
+.slideBoxLoader .sdWrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 37px;
+    height: 34px;
+    margin-left: -18.5px;
+    margin-top: -17px;
+}
+
+.slideBoxLoader .loader{
+    animation: slideBoxIntroLoader linear 1s infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: slideBoxIntroLoader linear 3s infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: slideBoxIntroLoader linear 3s infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: slideBoxIntroLoader linear 3s infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: slideBoxIntroLoader linear 3s infinite;
+    -ms-transform-origin: 50% 50%;
+}
+
+@keyframes slideBoxIntroLoader{
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(0.99) scaleY(0.99) ;
+    }
+}
+
+@-moz-keyframes slideBoxIntroLoader{
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(0.99) scaleY(0.99) ;
+    }
+}
+
+@-webkit-keyframes slideBoxIntroLoader {
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(0.99) scaleY(0.99) ;
+    }
+}
+
+@-o-keyframes slideBoxIntroLoader {
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(0.99) scaleY(0.99) ;
+    }
+}
+
+@-ms-keyframes slideBoxIntroLoader {
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(0.99) scaleY(0.99) ;
+    }
+}
